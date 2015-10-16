@@ -8,7 +8,7 @@
 #include "ui_mainwindow.h"
 
 
-//Variaveis de configuração
+//vars config
 static QChar _STX = '\x02';
 static QString _AUTO_GAP = "C0000"; //Gap Automático
 static QString _MANUAL_GAP = "KI503"; //Gap Manual
