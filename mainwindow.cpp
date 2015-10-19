@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QHostInfo>
+#include <QMessageBox>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -81,7 +82,7 @@ void MainWindow::on_pushButton_2_clicked()
             listValues.clear();
         }
     } else {
-        qDebug() << "Value NULL";
+        QMessageBox::critical(this, tr("Erro"), tr("Os campos Inicial e Final não devem ser nulos"));
     }
 }
 
