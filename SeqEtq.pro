@@ -15,6 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp
 
+TRANSLATIONS = SeqEtq_Default.ts
+
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+
+#CODECFORTR = ISO-8859-5
+#CODECFORSRC = UTF-8
