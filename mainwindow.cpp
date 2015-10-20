@@ -91,11 +91,12 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::listPrinters()
 {
     QList<QPrinterInfo> printerInfo = QPrinterInfo::availablePrinters();
+    QString hostname = QHostInfo::localHostName();
 
+    ui->comboBoxPrinters->addItem("\\\\" + hostname + "\\Argox");
     for (int i = 0; i < printerInfo.size(); ++i) {
         ui->comboBoxPrinters->addItem(printerInfo[i].printerName());
     }
 
-    QString hostname = QHostInfo::localHostName();
-    ui->comboBoxPrinters->addItem("\\\\" + hostname + "\\Argox");
+
 }
